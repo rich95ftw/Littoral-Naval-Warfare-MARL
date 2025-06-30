@@ -616,7 +616,7 @@ class Game:
     def define_grid_from_image(self, image_path, grid_size):
         # Load and resize the image
         image = Image.open(image_path)
-        resized_image = image.resize((grid_size, grid_size), Image.ANTIALIAS)
+        resized_image = image.resize((grid_size, grid_size), Image.LANCZOS)
 
         # Convert the image to grayscale
         grayscale_image = resized_image.convert("L")
@@ -743,7 +743,7 @@ class Game:
         if show:
             plt.show()
         if path is not None:
-            plt.savefig(PATH + f"\imagen{self.imagen}.png")
+            plt.savefig(r"PATH\imagen" + f"{self.imagen}.png")
         self.imagen += 1
         plt.close(fig)
 

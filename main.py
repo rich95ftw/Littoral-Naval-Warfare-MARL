@@ -54,15 +54,22 @@ PATH = os.path.join(os.getcwd(), 'models')
 
 gif_path = os.path.join(os.getcwd(), 'gif')
 
-arg1 = sys.argv[0]
+# Initialize arguments with default values
+skip_training = 'false'  # Default value
+load_models = 'false'    # Default value
+visualize_first_test = 'false' # Default value
+
+# Parse command-line arguments if they exist
 if len(sys.argv) > 1:
-    arg2 = sys.argv[1]
+    skip_training = sys.argv[1] # arg2 in your original code, but sys.argv[0] is script name
 if len(sys.argv) > 2:
-    arg3 = sys.argv[2]
+    load_models = sys.argv[2]   # arg3 in your original code
 if len(sys.argv) > 3:
-    arg4 = sys.argv[3]
-if len(sys.argv) > 4:
-    arg5 = sys.argv[4]
+    visualize_first_test = sys.argv[3] # arg4 in your original code
+
+# The original arg1 was sys.argv[0] which is the script name itself,
+# so arg2 in your original code corresponds to sys.argv[1].
+# I've adjusted the indexing to be more standard.
 
 """
 print(f'PyTorch version: {torch.__version__}')
@@ -73,10 +80,6 @@ print(f'CUDNN version: {torch.backends.cudnn.version()}')
 print(f'Available GPU devices: {torch.cuda.device_count()}')
 print(f'Device Name: {torch.cuda.get_device_name()}')
 """
-
-skip_training = arg2
-load_models = arg3
-visualize_first_test = arg4
 
 env = Game()
 
