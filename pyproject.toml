@@ -1,23 +1,25 @@
-[project]
+[tool.poetry]
 name = "littoral-naval-warfare-marl"
 version = "0.1.0"
-description = "A simplistic RL environment for littoral surface warfare"
-authors = [
-    {name = "Rich Wood",email = "31519720+rich95ftw@users.noreply.github.com"}
-]
+description = ""
+authors = ["Rich Wood <rftwood@googlemail.com>"]
+packages = []
+# Disable package installation mode:
+package-mode = false
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "ipython (==8.12.3)",
-    "matplotlib (==3.8.4)",
-    "numpy (==1.23.1)",
-    "pillow (==11.2.1)",
-    "scikit-learn (==1.7.0)",
-    "torch (==2.7.1)",
-    "torchviz (==0.0.3)",
-    "wandb (==0.20.1)"
-]
 
+[tool.poetry.dependencies]
+python = ">=3.12"
+# put your dependencies here, e.g.
+# numpy = "^1.23"
+numpy = "^2.3.1"
+matplotlib = "^3.10.3"
+torch = "^2.7.1"
+ipython = "^9.3.0"
+scikit-image = "^0.25.2"
+torchviz = "^0.0.3"
+wandb = "^0.20.1"
+scikit-learn = "^1.7.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
