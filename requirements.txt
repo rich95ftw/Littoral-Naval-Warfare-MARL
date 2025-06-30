@@ -1,0 +1,10 @@
+ipython==8.4.0
+ipython==8.12.3
+matplotlib==3.8.4
+numpy==1.23.1
+Pillow==11.2.1
+scikit_learn==1.7.0
+skimage==0.0
+torch==2.7.1
+torchviz==0.0.3
+wandb==0.20.1
