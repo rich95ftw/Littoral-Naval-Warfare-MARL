@@ -1,0 +1,30 @@
+{
+  "os":  "Windows-11-10.0.22631-SP0",
+  "python":  "CPython 3.12.10",
+  "startedAt":  "2025-07-01T11:02:37.864030Z",
+  "program":  "c:\\Users\\RichardWood\\Documents\\Littoral-Naval-Warfare-MARL\\main.py",
+  "codePath":  "main.py",
+  "git":  {
+    "remote":  "https://github.com/rich95ftw/Littoral-Naval-Warfare-MARL.git",
+    "commit":  "032132e9dfe7d37f5a37f0df692f41cc11e90af4"
+  },
+  "root":  "C:\\Users\\RichardWood\\Documents\\Littoral-Naval-Warfare-MARL",
+  "host":  "Dell_Inspiron",
+  "executable":  "C:\\Users\\RichardWood\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\littoral-naval-warfare-marl-Qyc85R3u-py3.12\\Scripts\\python.exe",
+  "codePathLocal":  "main.py",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "981441966080",
+      "used":  "172502274048"
+    }
+  },
+  "memory":  {
+    "total":  "8310034432"
+  },
+  "cpu":  {
+    "count":  4,
+    "countLogical":  8
+  }
+}

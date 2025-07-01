@@ -55,21 +55,17 @@ PATH = os.path.join(os.getcwd(), 'models')
 gif_path = os.path.join(os.getcwd(), 'gif')
 
 # Initialize arguments with default values
-skip_training = 'false'  # Default value
+skip_training = 'true'  # Default 3value is 'false'; alternative is 'true'
 load_models = 'false'    # Default value
-visualize_first_test = 'false' # Default value
+visualize_first_test = 'true' # Default value
 
 # Parse command-line arguments if they exist
-if len(sys.argv) > 1:
-    skip_training = sys.argv[1] # arg2 in your original code, but sys.argv[0] is script name
+if len(sys.argv) > 1:3
+    skip_training = sys.argv[1] 
 if len(sys.argv) > 2:
-    load_models = sys.argv[2]   # arg3 in your original code
+    load_models = sys.argv[2]   
 if len(sys.argv) > 3:
-    visualize_first_test = sys.argv[3] # arg4 in your original code
-
-# The original arg1 was sys.argv[0] which is the script name itself,
-# so arg2 in your original code corresponds to sys.argv[1].
-# I've adjusted the indexing to be more standard.
+    visualize_first_test = sys.argv[3] 
 
 """
 print(f'PyTorch version: {torch.__version__}')

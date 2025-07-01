@@ -11,7 +11,7 @@
     "environment_setup": {
         "ew_threshold": 70,
         "movement_threshold": 74,
-        "side": "blue",
+        "side": "red",
         "n_blue": 3,
         "n_red": 2,
         "n_red_landingship": 1,
