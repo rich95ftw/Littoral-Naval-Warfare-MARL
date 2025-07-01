@@ -60,7 +60,7 @@ load_models = 'false'    # Default value
 visualize_first_test = 'true' # Default value
 
 # Parse command-line arguments if they exist
-if len(sys.argv) > 1:3
+if len(sys.argv) > 1:
     skip_training = sys.argv[1] 
 if len(sys.argv) > 2:
     load_models = sys.argv[2]   

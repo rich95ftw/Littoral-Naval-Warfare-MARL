@@ -662,8 +662,8 @@ class Game:
                     ax.plot(*ship_position, "ro", markersize=8, label="Large Combatant")
                 elif ship.ship_type == 'ls':
                     ax.plot(*ship_position, "rs", markersize=6, label="Landing Ship")
-                    landing = (ship.landing_spot[1], 100 - ship.landing_spot[0] - 1)
-                    ax.plot(*landing, "r*", markersize=6, label="Landing Spot")
+                    landing = (ship.landing_zone[1], 100 - ship.landing_zone[0] - 1)
+                    ax.plot(*landing, "r*", markersize=6, label="Landing Zone")
 
         # Plot field of vision
         for ship in self.blue_ships + self.red_ships:
