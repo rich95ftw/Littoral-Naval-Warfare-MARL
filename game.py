@@ -743,7 +743,7 @@ class Game:
         if show:
             plt.show()
         if path is not None:
-            plt.savefig(r"PATH\imagen" + f"{self.imagen}.png")
+            plt.savefig(os.path.join(path, f"imagen{self.imagen}.png"))
         self.imagen += 1
         plt.close(fig)
 
