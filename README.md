@@ -1,5 +1,8 @@
 # Littoral-Anti-Surface-Warfare-Environment-and-Multi-Agent-Reinforcement-Learning
 
+See https://github.com/valauri/Littoral-Naval-Warfare-MARL
+Also see https://aaltodoc.aalto.fi/server/api/core/bitstreams/4ec26c9b-1e2e-45b2-9cfc-fb11525bf606/content
+
 A simplistic RL environment for littoral surface warfare
 
 The project includes a game environment that maps an image of the northern Baltic Sea into a game grid of 100 x 100 squares. Red and blue sides aim to annihilate one another in this littoral naval warfare scenario.
